@@ -1,0 +1,24 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4799
+
+Include Fixer organizes C and C++ #include header files to be in specific
+categories, as well as organizing alphabetically. Default categories are
+provided, as well as the option to customize categories
+
+Usage:
+Once installed, use the following command to organize include files:
+    :FixIncludes
+
+The command will search for lines containing #include directives, and organize
+them into different categories and alphabetically within those categories.
+Note: this includes whether the include is written as "file.h" or <file.h>.
+All includes starting with " will precede those starting with <
+
+The plugin comes with a number of default categories. Each category is
+separated from the others with a blank line. The default categories are
+arranged in the following order:
+        module
+        local
+        boost
+        qt
+        c std library
+        c++ std library
